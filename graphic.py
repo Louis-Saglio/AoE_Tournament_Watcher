@@ -1,4 +1,6 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot
+import matplotlib
+matplotlib.use('Agg')
 
 
 def main(show=True):
@@ -11,15 +13,15 @@ def main(show=True):
         teutons.append(int(ti))
         britons.append(int(bi))
     y = list(range(len(teutons)))
-    plt.plot(y, teutons, label='Teutons')
-    plt.plot(y, britons, label='Britons')
-    plt.xlabel('Time')
-    plt.ylabel('Number of vote')
-    plt.legend()
-    plt.savefig("static/images.png")
+    matplotlib.pyplot.plot(y, teutons, label='Teutons')
+    matplotlib.pyplot.plot(y, britons, label='Britons')
+    matplotlib.pyplot.xlabel('Time')
+    matplotlib.pyplot.ylabel('Number of vote')
+    matplotlib.pyplot.legend()
+    matplotlib.pyplot.savefig("static/images.png")
     if show:
-        plt.show()
-    plt.close()
+        matplotlib.pyplot.show()
+    matplotlib.pyplot.close()
 
 
 if __name__ == '__main__':

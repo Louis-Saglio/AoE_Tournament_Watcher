@@ -2,4 +2,3 @@ flask
 matplotlib
 requests
 gunicorn
-tkinter
