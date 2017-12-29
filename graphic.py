@@ -19,6 +19,7 @@ def main(show=True):
     plt.savefig("static/images.png")
     if show:
         plt.show()
+    plt.close()
 
 
 if __name__ == '__main__':
