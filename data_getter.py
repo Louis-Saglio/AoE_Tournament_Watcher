@@ -36,6 +36,7 @@ class Parser:
             pprint.pprint(self.data)
 
 
+print("data getter")
 while True:
     time.sleep(5)
     data = Parser().main()
