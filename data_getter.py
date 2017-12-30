@@ -38,7 +38,6 @@ class Parser:
 
 def main():
     global teutons, britons
-    print("data getter")
     while True:
         time.sleep(5)
         data = Parser().main()
