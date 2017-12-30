@@ -2,6 +2,7 @@ import flask
 import graphic
 
 app = flask.Flask("AoE_Meme_Tournament")
+app.debug = True
 
 
 @app.route("/")
