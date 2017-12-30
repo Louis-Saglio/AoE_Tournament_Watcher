@@ -36,11 +36,13 @@ class Parser:
             pprint.pprint(self.data)
 
 
-print("data getter")
-while True:
-    time.sleep(5)
-    data = Parser().main()
-    teutons = data["HAHA"]
-    britons = data["LOVE"]
-    with open("data", "a") as f:
-        f.write(f"{teutons},{britons}\n")
+def main():
+    global teutons, britons
+    print("data getter")
+    while True:
+        time.sleep(5)
+        data = Parser().main()
+        teutons = data["HAHA"]
+        britons = data["LOVE"]
+        with open("data", "a") as f:
+            f.write(f"{teutons},{britons}\n")
