@@ -13,6 +13,7 @@ def main(show=True):
         ti, bi = line[:-1].split(',')
         teutons.append(int(ti))
         britons.append(int(bi))
+    print(teutons)
     y = list(range(len(teutons)))
     matplotlib.pyplot.plot(y, teutons, label='Teutons')
     matplotlib.pyplot.plot(y, britons, label='Britons')
