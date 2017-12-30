@@ -1,10 +1,10 @@
 import matplotlib
+import os
 matplotlib.use('Agg')
 import matplotlib.pyplot
 
 
 def main(show=True):
-    print("main")
     with open('data', 'r') as f:
         lines = f.readlines()
     teutons = []
@@ -20,6 +20,7 @@ def main(show=True):
     matplotlib.pyplot.xlabel('Time')
     matplotlib.pyplot.ylabel('Number of vote')
     matplotlib.pyplot.legend()
+    os.remove("static/images.png")
     matplotlib.pyplot.savefig("static/images.png")
     if show:
         matplotlib.pyplot.show()
