@@ -46,3 +46,7 @@ def main():
         britons = data["LOVE"]
         with open("data", "a") as f:
             f.write(f"{teutons},{britons}\n")
+
+
+if __name__ == '__main__':
+    main()
