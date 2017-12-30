@@ -4,6 +4,7 @@ import matplotlib.pyplot
 
 
 def main(show=True):
+    print("main")
     with open('data', 'r') as f:
         lines = f.readlines()
     teutons = []
